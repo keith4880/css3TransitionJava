@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/transitionsStyles.css" media="screen"/>
+        <title>CSS3 Transitions</title>
+ 
+    <script>
+        function changeBG(el,color){
+            var elem = document.getElementById(el);
+            elem.style.transition = "background 2.0s linear 0s";
+            elem.style.background = color; 
+        }
+        
+    </script>
+       </head>
+    <body>
+        <h1>TRANSITIONS</h1>
+                
+        <button onclick="changeBG('box', '#F0F');">Magenta</button>
+        <button onclick="changeBG('box', '#0C0');">Green</button>
+        <button onclick="changeBG('box', '#ffa500');">Original</button>
+        <div id="box"><b></b>This will be the location of future content.</div>
+    </body>
+</html>
